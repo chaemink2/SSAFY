@@ -1,0 +1,292 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>채민기의 포트폴리오</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+    <link rel="stylesheet" href="/style.css">
+    <!-- css랑 링크 연결 -->
+  </head>
+  <body>
+
+    <header>
+
+      <nav class="navbar bg-dark navbar-dark px-5 position-fixed w-100">
+        <!-- position-fixed : 화면에 부착, css > z-index로 z축 설정해줘야함 -->
+        <!-- w-100 : 화면 너비 설정, 부트스트랩 방식임 -->
+        
+          <a class="navbar-brand" href="#">
+            채민기
+            <img src="/images_포트폴리오/icon.jpg" alt="" width="50" height="35">
+          </a>          
+          <ul class="nav">
+            <li class="nav-item bg-light">
+              <a class="nav-link active text-black" aria-current="page" href="#main-part">Main</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-white" href="#about-part">About</a>
+            </li>
+            <li class="nav-item bg-light">
+              <a class="nav-link text-black" href="#skill-part">Skill</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-white" href="#stack-part">Stack</a>
+            </li>
+            <li class="nav-item bg-light">
+              <a class="nav-link text-black" href="#closing-part">Closing</a> 
+            </li>
+          </ul>
+          <!-- 클래스에 disabled 뒤에 붙여주면 클릭이 안됨 -->
+          
+        
+      </nav>
+
+    </header>
+
+    <main>
+
+      <!-- section을 사용하는 이유: 시멘틱 태그를 사용해서 컴퓨터가 쉽게 알아듣게 하기위해 -->
+      <!-- main 파트 -->
+      <section id="main-part">
+        <div id="carouselExampleIndicators" class="carousel carousel-white slide" data-bs-ride="carousel">
+          <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+          </div>
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img src="/images_포트폴리오/2.jpg" class="d-block w-100" alt="전구이미지">
+              <div class="carousel-caption d-none d-md-block h-51">
+                <!-- h-50 : 캡션글씨들 y축 기준으로 화면 중앙에 위치하게 함, 부트스트랩 방식 -->
+                <h4>
+                  전기공학 전공하고 괜히 싸피들어와서 고통받는
+                  <p><h2>채민기입니다만</h2></p>
+                </h4>
+                
+              </div>
+            </div>
+            <div class="carousel-item" data-bs-interval="10000">
+              <img src="/images_포트폴리오/2.jpg" class="d-block w-100" alt="인공지능이미지">
+            </div>
+            <div class="carousel-item" data-bs-interval="2000">
+              <img src="/images_포트폴리오/2.jpg" class="d-block w-100" alt="발전소이미지">
+            </div>
+          </div>
+          <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+      </section>
+
+      <!-- about 파트 -->
+      <section id="about-part" style="min-height: 100vh;" class="pt-3">
+        <!-- min-height : 100vh : 화면에 이 파트가 꽉 차게 -->
+        <div class="bg-dark h2 text-white text-center p-4 mt-5">
+          About
+        </div>
+
+        <div>
+         <div class="card mx-auto mt-5" style="width: 18rem;">
+           <!-- mx-auto : 좌우만 오토, 상하는 아무 것도 없이 -->
+           <!-- mt-4 : 탑에서 4만큼 떨어뜨림 -->
+           <img src="/images_포트폴리오/4.jpg" class="card-img-top w-75 mx-auto" alt="돈벌러가는이미지">
+           <div class="card-body text-center">
+             <h5 class="card-title">채민기</h5>
+             <p class="card-text mt-4">돈 엄청 벌어서 18k 금으로 된 넥타이도 사고 가방도 사고 맛있는 것도 먹을라고 갓생살고 있는 개 쩌는 나</p>
+             <a href="https://pro.mincoding.co.kr/" class="btn btn-dark mt-3">알고리즘 과제하러가기</a>
+           </div>
+ 
+           
+         </div>
+         
+         <ul class="list-group w-50 mx-auto mt-5">
+           <li class="list-group-item">
+             <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-phone-fill" viewBox="0 0 16 16">
+               <path d="M3 2a2 2 0 0 1 2-2h6a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V2zm6 11a1 1 0 1 0-2 0 1 1 0 0 0 2 0z"/>
+             </svg>
+             <span> 010-7615-1247</span>
+           </li>
+           <li class="list-group-item">
+             <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-instagram" viewBox="0 0 16 16">
+               <path d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.917 3.917 0 0 0-1.417.923A3.927 3.927 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.916 3.916 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.926 3.926 0 0 0-.923-1.417A3.911 3.911 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0h.003zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599.28.28.453.546.598.92.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.47 2.47 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.478 2.478 0 0 1-.92-.598 2.48 2.48 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233 0-2.136.008-2.388.046-3.231.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92.28-.28.546-.453.92-.598.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045v.002zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92zm-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217zm0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334z"/>
+             </svg>
+             <span> m2n__k2</span>
+           </li>
+           <li class="list-group-item">
+             <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-house-fill" viewBox="0 0 16 16">
+               <path fill-rule="evenodd" d="m8 3.293 6 6V13.5a1.5 1.5 0 0 1-1.5 1.5h-9A1.5 1.5 0 0 1 2 13.5V9.293l6-6zm5-.793V6l-2-2V2.5a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5z"/>
+               <path fill-rule="evenodd" d="M7.293 1.5a1 1 0 0 1 1.414 0l6.647 6.646a.5.5 0 0 1-.708.708L8 2.207 1.354 8.854a.5.5 0 1 1-.708-.708L7.293 1.5z"/>
+             </svg>
+             <span> 영등포구 문래동</span>
+           </li>
+           <li class="list-group-item">
+             <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-envelope" viewBox="0 0 16 16">
+               <path d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V4Zm2-1a1 1 0 0 0-1 1v.217l7 4.2 7-4.2V4a1 1 0 0 0-1-1H2Zm13 2.383-4.708 2.825L15 11.105V5.383Zm-.034 6.876-5.64-3.471L8 9.583l-1.326-.795-5.64 3.47A1 1 0 0 0 2 13h12a1 1 0 0 0 .966-.741ZM1 11.105l4.708-2.897L1 5.383v5.722Z"/>
+             </svg>
+             <span> ksi03525@naver.com</span>
+           </li>
+         </ul>
+        </div>
+            
+
+      </section>
+
+
+      <!-- skill 파트 -->
+      <section id="skill-part" style="min-height: 100vh;" class="pt-3">
+        <div class="bg-dark h2 text-white text-center p-4 mt-5">
+          Language Skill
+        </div>
+
+        <ul class="mx-auto w-50 mt-5">
+          <li class="list-group-items d-flex align-items-center p-4">
+            <div class="w-25">C</div>
+            <div class="progress w-50">
+              
+              <div class="progress-bar bg-danger" role="progressbar" aria-label="Danger example" style="width: 1%" aria-valuenow="1" aria-valuemin="0" aria-valuemax="100"></div>
+              
+            </div>
+            <div class="w-25 text-center">1%</div>
+          </li>
+          <li class="list-group-items d-flex align-items-center p-4">
+            <div class="w-25">C++</div>
+            <div class="progress w-50">
+              
+              <div class="progress-bar bg-danger" role="progressbar" aria-label="Danger example" style="width: 3%" aria-valuenow="3" aria-valuemin="0" aria-valuemax="100"></div>
+              
+            </div>
+            <div class="w-25 text-center">3%</div>
+          </li>
+          <li class="list-group-items d-flex align-items-center p-4">
+            <div class="w-25">JavaScript</div>
+            <div class="progress w-50">
+              
+              <div class="progress-bar bg-danger" role="progressbar" aria-label="Danger example" style="width: 1%" aria-valuenow="1" aria-valuemin="0" aria-valuemax="100"></div>
+              
+            </div>
+            <div class="w-25 text-center">1%</div>
+          </li>
+          <li class="list-group-items d-flex align-items-center p-4">
+            <div class="w-25">Python</div>
+            <div class="progress w-50">
+              
+              <div class="progress-bar bg-danger" role="progressbar" aria-label="Danger example" style="width: 2%" aria-valuenow="2" aria-valuemin="0" aria-valuemax="100"></div>
+              
+            </div>
+            <div class="w-25 text-center">2%</div>
+          </li>
+        </ul>       
+        
+        
+        
+
+
+
+      </section>
+
+      <!-- stack 파트 -->
+      <section id="stack-part" style="height: 100vh;" class="pt-3">
+        <div class="bg-dark h2 text-white text-center p-4 mt-5">
+          Stack of Skills
+        </div>
+
+
+        <table class="table table-dark table-hover w-50 mt-5 mx-auto">
+          <thead>
+            <tr>
+              <th scope="col">Category</th>
+              <th scope="col">Stack</th>
+              <th scope="col">Level</th>
+              <th scope="col">Base</th>
+            </tr>
+            <!-- th는 볼드체, td는 일반체 -->
+          </thead>
+          <tbody>
+            <tr>
+              <th scope="row">Electrical Engineering</th>
+              <td>carculate</td>
+              <td>⬛⬛⬛⬛⬜</td>
+              <td>bachelor, certificate</td>
+              </tr>
+              <!-- ⬜⬜⬜⬜⬜⬛⬛⬛⬛⬛ -->
+            <tr>
+              <th scope="row">Sales</th>
+              <td>marketing</td>
+              <td>⬛⬛⬛⬛⬜</td>
+              <td>estatic launching</td>
+              
+            </tr>
+            
+            <tr>
+              <th scope="row">Physical</th>
+              <td>sports</td>
+              <td>⬛⬛⬛⬜⬜</td>
+              <td>athlete, takwondo </td>
+              
+              
+            </tr>
+            <tr>
+              <th scope="row">Sociability</th>
+              <td>speech</td>
+              <td>⬛⬛⬛⬛⬜</td>
+              <td>college teaching</td>
+              
+            </tr>
+            <tr>
+              <th scope="row">Embedded</th>
+              <td>firmware, etc</td>
+              <td>⬛⬜⬜⬜⬜</td>
+              <td>hardly trying</td>
+              
+            </tr>
+          </tbody>
+        </table>
+
+
+      </section>
+
+
+
+      <section id="closing-part" style="min-height: 100vh;" class="pt-3">
+        <div class="bg-dark h2 text-white text-center p-4 mt-5">
+          Closing
+        </div>
+
+        <div class="card mx-auto w-50 mt-5 mb-5" style="width: 18rem;">
+          <img src="/images_포트폴리오/5.jpg" class="card-img-top" alt="마무리사진">
+          <div class="card-body">
+            <p class="card-text text-center p-4 fst-italic">달리는 기차도 원래는 멈춰있다가 서서히 출발합니다. 
+              <br>저는 달려나갈 준비를 하고 있습니다.<br>연료 좀 주십쇼.</p>
+          </div>
+        </div>
+
+
+      </section>
+    </main>
+
+
+
+
+    <footer class="bg-dark text-white text-center p-3">
+      &copy; 2022 채민기 All right reserved
+
+    </footer>   
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
+  </body>
+</html>
+
+
+
+<!-- <div class="bg-dark h2 text-white text-center p-4">
+          about
+        </div> -->

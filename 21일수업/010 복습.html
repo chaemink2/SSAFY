@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <div>a</div>
+  <button>b</button>
+  <script>
+    const div = document.querySelector('div')
+
+    div.addEventListener('click', test)
+
+    function test(){
+      console.log("hi")
+    }
+
+    function test1(num){
+
+    }
+
+    test1(event)
+
+    div.addEventListener('click', function(e){
+      console.log(e.target.value)
+    })
+
+    div.addEventListener('click', test)
+
+    // function aaa(number){
+    //   console.log(number)
+    // }
+
+    // aaa(1)
+
+
+
+  </script>
+</body>
+</html>

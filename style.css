@@ -1,0 +1,10 @@
+.carousel-item img{
+  height: 100vh;
+}
+/* 보류 */
+/* vh : 뷰포트의 하이트 */
+/* vw : 뷰포트의 위드 */
+
+nav{
+  z-index: 1;
+}
