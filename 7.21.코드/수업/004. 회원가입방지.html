@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <input placeholder="아이디" type="text" class="input">
+    <br>
+    <input placeholder="비밀번호" type="password" class="input">
+    <br>
+    <button class="click">회원가입하기</button>
+    <div></div>
+
+    <script>
+        const input = document.querySelector(".input");
+        const click = document.querySelector(".click");
+
+        click.addEventListener("click", function(e){
+            if(input.value !== ""){
+                alert("회원가입완료");
+            }
+            else{
+                alert("공백입니다")
+            }
+
+        })
+
+
+    </script>
+
+    <!-- 교수님 코드에 id가 3개인데 보통 코드에 id 1개만
+    넣는다고 하지 않았었나? 왜 class가 아니라 id를 쓰시
+    는거지? -->
+
+
+    
+</body>
+</html>

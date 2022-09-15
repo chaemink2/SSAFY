@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .bg-yellow{
+            background-color: yellow;
+        }
+    </style>
+</head>
+<body>
+
+    <button class="button-add">class추가</button>
+    <button class="button-remove">class제거</button>
+    <button class="button-toggle">class토글</button>
+
+    <script>
+        
+        const buttonadd = document.querySelector(".button-add")
+        const buttonremove = document.querySelector(".button-remove")
+        const buttontoggle = document.querySelector(".button-toggle")
+        
+        buttonadd.addEventListener("click", function(){
+            
+            document.querySelector("body").classList.add("bg-yellow")
+        })
+        buttonremove.addEventListener("click", function(){
+            document.querySelector("body").classList.remove("bg-yellow")
+        })
+        buttontoggle.addEventListener("click", function(){
+            document.querySelector("body").classList.toggle("bg-yellow")
+        })
+
+        
+    </script>
+    
+</body>
+</html>
+
+<!-- g메일로 이동
+다크모드 글씨까지
+싸피 검색 > alert 후 실제 검색참
+싸피로 이동
+삼성으로 이동 -->
