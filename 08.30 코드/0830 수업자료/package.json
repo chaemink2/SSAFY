@@ -1,0 +1,11 @@
+{
+  "name": "node-p",
+  "version": "1.0.0",
+  "description": "for me node study",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Chae Min Ki",
+  "license": "ISC"
+}
