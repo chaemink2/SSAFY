@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .test{
+            color: blue;
+        }
+    </style>
+</head>
+<body>
+    
+
+    <div>HI</div>
+
+    <script>
+        const div = document.querySelector("div")
+        // setatt
+        // div.setAttribute("class", "test")
+        // classlist add("문지열")
+        div.classList.add("test")
+        div.classList.add("hello")
+        div.classList.add("hello")
+        // 이미 추가된 속성값이면, 중복이되면 한개만 출력된다, 해당값을 무시한다
+
+        // remove
+        // classlist.remove("문자열")
+        // class 속성값 제거
+        // 이미 제거된 속성이면 해당 값을 무시한다.
+        div.classList.remove("test")
+        div.classList.remove("test")
+
+        // toggle
+        // classlist.toggle(문자열)
+        // 해당 값이 없으면 추가, 없으면 제거 (스위치개념)
+        // 이거는 몇번 부여하냐에 따라 속성값이 달라진다.
+        div.classList.toggle("test")
+        div.classList.toggle("test")
+        div.classList.toggle("test")
+        
+
+        // contains
+        // classlist.contains("문자열")
+        // 특정 class명이 추가가 돼있는지 판별 > true/false 리턴
+        console.log( div.classlist.contains("test"))
+
+        // replace
+        // classlist.replace(old, new)
+        // 특정 클래스 속성값을 새로운 속성값으로 바꾼다
+        div.classList.replace("test", "chicken")
+
+    </script>
+</body>
+</html>

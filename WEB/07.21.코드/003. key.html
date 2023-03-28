@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="text" class="keydown">
+    <div class="keydown-result"></div>
+
+    <input type="text" class="keyup">
+    <div class="keyup-result"></div>
+
+    <script>
+        // keydown : 키보드를 눌렀을 때
+        const keydown = document.querySelector('.keydown');
+        const keydownresult = document.querySelector(".keydown-result");
+        keydown.addEventListener("keydown",function(e){
+            console.log(e.target.value);
+            console.log(e);
+            console.log(e.code);
+            keydownresult.textContent = e.code;
+            // input에 키를 입력하고 ㄴ서 내용을 지우도록하기
+            if(e.code === "Enter"){
+                e.target.value = "";
+            }
+            
+        })
+        // keyup : 키보드를 눌렀다 땠을때
+        // keyup이 더 활용됨
+
+        const keyup = document.querySelector(".keyup");
+        const keyupresult = document.querySelector(".keyup-result");
+        keyup.addEventListener("keyup", function(e){
+            console.log(e.target.value);
+            console.log(e);
+            console.log(e.code);
+            keyupresult.textContent = e.code;
+        })
+    </script>
+</body>
+</html>
