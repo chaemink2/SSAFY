@@ -1,6 +1,6 @@
 ##싸피 8기 회고##
 
-! image yet
+! image upload require
 
 -1학기-
 - 파이썬
